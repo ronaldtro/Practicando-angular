@@ -7,7 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgForComponent implements OnInit {
 
-  constructor() { }
+  personas: any[];
+
+  constructor() {
+    this.personas = [
+      {nombre: 'Ronald', apellido: 'Castro', edad: 24},
+      {nombre: 'Fabian', apellido: 'Fuentes', edad: 23},
+      {nombre: 'Mariana', apellido: 'Pajon', edad: 31},
+      {nombre: 'Juliana', apellido: 'Cifuentes', edad: 25}
+    ];
+  }
 
   ngOnInit(): void {
   }
