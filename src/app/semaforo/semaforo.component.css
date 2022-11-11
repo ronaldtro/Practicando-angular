@@ -1,0 +1,25 @@
+.semaforo{
+    width: 300px;
+    height: 300px;
+}
+
+.prueba{
+    display: flex;
+    flex-direction: block;
+}
+
+.rojo{
+    background-color: red;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.verde{
+    background-color: green;
+}
+
+.redondo{
+    border-radius: 50%;
+}

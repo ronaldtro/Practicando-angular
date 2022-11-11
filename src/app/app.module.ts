@@ -6,6 +6,9 @@ import { PadreComponent } from './padre/padre.component';
 import { Hijo2Component } from './hijo2/hijo2.component';
 import { EventosComponent } from './eventos/eventos.component';
 import { AlertaComponent } from './alerta/alerta.component';
+import { FormsModule } from '@angular/forms';
+import { SemaforoComponent } from './semaforo/semaforo.component';
+import { NgForComponent } from './ng-for/ng-for.component'; //NgModel
 
 
 @NgModule({
@@ -15,10 +18,13 @@ import { AlertaComponent } from './alerta/alerta.component';
     PadreComponent,
     Hijo2Component,
     EventosComponent,
-    AlertaComponent
+    AlertaComponent,
+    SemaforoComponent,
+    NgForComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

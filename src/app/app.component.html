@@ -1,3 +1,43 @@
-<alerta mensaje="Mensaje 1"></alerta>
-<alerta mensaje="Mensaje 2"></alerta>
-<alerta></alerta>
+<!-- <alerta mensaje="Mensaje 1"></alerta> -->
+<!-- <alerta mensaje="Mensaje 2"></alerta> -->
+<!-- <alerta></alerta> -->
+
+
+<!-- Cambio la propiedad css de un parrafo mediante el evento click, asociado a una funcion de cambio de color -->
+
+<p [ngStyle]="propiedadesParrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ducimus rerum magni ex! Fuga</p>
+<div>
+    <button (click)="cambiaColor('v')">Verde</button>
+    <button (click)="cambiaColor('r')">Rojo</button>
+    <button (click)="cambiaColor('a')">Amarilo</button>
+</div>
+
+<!-- Mediante el value, cambiamos el estado de una variable -->
+<div>
+    <input type="text" [(ngModel)]="propiedadesParrafo.color"> 
+</div>
+
+
+<!-- Cambio el tamaño de un texto con una funcion asociada al evento input -->
+<div>
+    <input type="range" min="10" max="100" step="10" (input)="onChange($event)">
+</div>
+
+<!-- Probando semaforo -->
+<semaforo></semaforo>
+
+<!-- ngIf -->
+<p *ngIf="mostrar">Probando el ngif - true</p>
+<p *ngIf="!mostrar">Probando el ngif - false</p>
+
+<!-- ngIf version else -->
+<p *ngIf="ver; else elseBlock">Contenido ngIf - if</p>
+<ng-template #elseBlock>
+    <p>Contenido ngIf -  else</p>
+</ng-template>
+
+<!-- Probando ngFor -->
+<ngfor></ngfor>
+
+
+
