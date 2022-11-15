@@ -8,7 +8,8 @@ import { EventosComponent } from './eventos/eventos.component';
 import { AlertaComponent } from './alerta/alerta.component';
 import { FormsModule } from '@angular/forms';
 import { SemaforoComponent } from './semaforo/semaforo.component';
-import { NgForComponent } from './ng-for/ng-for.component'; //NgModel
+import { NgForComponent } from './ng-for/ng-for.component';
+import { SwitchComponent } from './switch/switch.component'; //NgModel
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { NgForComponent } from './ng-for/ng-for.component'; //NgModel
     EventosComponent,
     AlertaComponent,
     SemaforoComponent,
-    NgForComponent
+    NgForComponent,
+    SwitchComponent
   ],
   imports: [
     BrowserModule,
